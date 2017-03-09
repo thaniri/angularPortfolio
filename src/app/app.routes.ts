@@ -3,6 +3,7 @@ import HomePage from './home-page';
 import ComponentTwo from './portf-page';
 import ProjOne from './proj-one';
 import ProjTwo from './proj-two';
+import ComponentThree from './transcript-page';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home-page', pathMatch: 'full' },
@@ -13,7 +14,8 @@ export const routes: Routes = [
       { path: 'proj-one', component: ProjOne },
       { path: 'proj-two', component: ProjTwo }
     ]
-  }
+  },
+  { path: 'transcript-page', component: ComponentThree }
 ];
 
 export const appRoutingProviders: any[] = [
