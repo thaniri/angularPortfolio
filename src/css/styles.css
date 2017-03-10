@@ -1,3 +1,5 @@
+/* CSS RESET */
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -20,8 +22,9 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	font-family:'Roboto', sans-serif;
 	vertical-align: baseline;
+	text-decoration:none;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -47,32 +50,270 @@ table {
 	border-spacing: 0;
 }
 
-/*RESET ENDS*/
-
-main, nav, footer, header, #wrapper{
-    border: solid black 1px;
+h1, h2, h3, h4, h5, h6, p, span, div{
+	color:#212121;
 }
 
-header{
-    width:100%;
-}
+/*CLASSES START HERE*/
 
-nav{
+.colourDemo{
     width:200px;
-	min-height:100vh;
-    float:left;
 }
+
+.colourSwatch{
+    margin:10px;
+}
+
+.largeContent{
+	position:relative;
+	min-height:50vh;
+	width:75%;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#fff;
+	box-shadow: 0 2px 5px rgba(0,0,0,.26);
+	padding:10px;
+}
+
+.smallContentRow{
+	display:flex;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.smallContent{
+	min-height:10vh;
+	margin:10px;
+	padding:10px;
+	background-color:#fff;
+	box-shadow: 0 2px 5px rgba(0,0,0,.26);
+	width:256px;
+}
+
+.username{
+	position:absolute;
+	right:20px;
+	color:#fff;
+	font-size:110%;
+}
+
+.username a{
+	color:#fff;
+}
+
+.username a:hover{
+	color:#eee;
+}
+
+/*COLOURS START HERE*/
+
+.primaryColour{
+    background-color:#4CAF50;
+}
+
+.secondaryColour{
+    background-color:#388E3C;
+}
+
+.tertiaryColour{
+    background-color:#C8E6C9;
+}
+
+.primaryColourAccent{
+    background-color:#2196F3;
+}
+
+.secondaryColourAccent{
+    background-color:#1976D2;
+}
+
+.tertiaryColourAccent{
+    background-color:#BBDEFB;
+}
+
+.textColourPrimary{
+	color:#212121;
+}
+
+/*IDS START HERE*/
+
+#leftCol{
+	float:left;
+	min-height:100vh;
+	width:256px;
+	overflow: hidden;
+}
+
+#topNav{
+	border-bottom: 1px solid #e0e0e0;
+	text-align:center;
+	width:256px;
+}
+
+#topNav img{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#topNav, header{
+	height:64px;
+}
+
+#centerNav{
+	width:256px;
+}
+
+#centerNav li{
+	padding:20px;
+}
+
+#centerNav a{
+	text-decoration: none;
+	color:#212121;
+}
+
+#centerNav li:hover{
+	background-color:#eee;
+}
+
+#botNav{
+	border-top: 1px solid #e0e0e0;
+	text-align:center;
+	position:fixed;
+	bottom:0px;
+	width:256px;
+}
+
+#botNav div{
+	font-size:75%;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#botNav, footer{
+	height:96px;
+}
+
+#rightCol{
+	overflow: hidden;
+	min-height:100vh;
+}
+
+#menuIcon{
+		display:initial;
+		padding-left:10px;
+		padding-right:10px;
+		margin:0px;
+		margin-top:10px;
+		float:left;
+		background:none;
+		border:none;
+		fill:#fff;
+}
+
+/*DEFAULT TAG NAMES START HERE*/
 
 main{
 	min-height:100vh;
-    width:100%;
+	border-left: 1px solid #e0e0e0;
+	background-color:#fafafa;
+	padding:20px;
+}
+
+nav{
+	min-height:100vh;
+	position:fixed;
+}
+
+header{
+	background-color:#4CAF50;
+	box-shadow: 0 2px 5px rgba(0,0,0,.26);
+	border-left: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+header h1{
+	color:#fff;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	padding-left:20px;
+	font-size:125%;
 }
 
 footer{
-    width:100%;
+	background-color:#4CAF50;
+	border-left: 1px solid #e0e0e0;
+	border-top: 1px solid #e0e0e0;
 }
 
-table, th, td {
-   border: 1px solid black;
-   padding:1px;
+footer h2{
+	color: #fff;
+	font-size:110%;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	padding-left:20px;
+}
+
+/* BREAKPOINTS START HERE */
+
+/* mobile-small */
+@media all and (min-width: 0) and (max-width: 360px) and (orientation: portrait){
+	#leftCol, nav{
+		display:none;
+	}
+}
+
+/* mobile-large */
+@media all and (min-width: 361px) and (orientation: portrait){
+	#leftCol, nav{
+		display:none;
+	}
+}
+
+/* tablet */
+@media all and (min-width: 601px) and (max-width: 840px) and (orientation : portrait){
+	#leftCol, nav{
+		display:none;
+	}
+}
+
+/* desktop-small */
+@media all and (min-width: 481px) and (max-width: 840px){
+	#leftCol, nav{
+		display:none;
+	}
+}
+
+/* desktop-medium-landscape */
+/*sidebar disappears*/
+@media all and (min-width: 841px) and (max-width: 1280px) and (orientation: landscape){
+	#leftCol, nav{
+		display:none;
+	}
+}
+	
+/* desktop-medium */
+/*sidebar disappears*/
+@media all and (min-width: 841px) and (max-width: 1280px) and (max-aspect-ratio: 4/3){
+	#leftCol, nav{
+		display:none;
+	}
+}
+
+/* desktop-large */
+@media all and (min-width: 1281px) and (max-width: 1600px){
+	#menuIcon{
+		display:none;
+	}
+}
+
+/* desktop-xlarge */
+@media all and (min-width: 1601px) and (max-width: 1920px){
+	#menuIcon{
+		display:none;
+	}
 }

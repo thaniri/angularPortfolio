@@ -1,10 +1,10 @@
 This is the transcript page
 
 <table>
-<tr>
-    <td>Course</td><td>Title</td><td>Grade</td><td>School</td><td>Semester</td><td>Year</td>
-</tr>
-<tr *ngFor="let grade of grades">
-    <td>{{grade.id}}</td><td>{{grade.title}}</td><td>{{grade.grade}}</td><td>{{grade.school}}</td><td>{{grade.semester }}</td><td>{{grade.year}}</td>
-</tr>
+    <thead>
+        <tr><th>Course</th><th>Title</th><th>Grade</th><th>School</th><th>Semester</th><th>Year</th></tr>
+    </thead>
+    <tr *ngFor="let grade of grades">
+        <td>{{grade.id}}</td><td>{{grade.title}}</td><td>{{grade.grade}}</td><td>{{grade.school}}</td><td>{{grade.semester }}</td><td>{{grade.year}}</td>
+    </tr>
 </table>
