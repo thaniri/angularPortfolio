@@ -4,10 +4,10 @@ import { routing, appRoutingProviders } from './app.routes';
 
 import { AppComponent } from './app.component';
 import HomePage from './home-page';
-import ComponentTwo from './portf-page';
+import PortfPage from './portf-page';
 import ProjOne from './proj-one';
 import ProjTwo from './proj-two';
-import ComponentThree from './transcript-page';
+import TranscriptPage from './transcript-page';
 import ResumePage from './resume-page';
 
 @NgModule({
@@ -18,10 +18,10 @@ import ResumePage from './resume-page';
   declarations: [
     AppComponent,
     HomePage,
-    ComponentTwo,
+    PortfPage,
     ProjOne,
     ProjTwo,
-    ComponentThree,
+    TranscriptPage,
     ResumePage
   ],
   providers: [

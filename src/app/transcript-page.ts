@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'component-three',
+  selector: 'transcript-page',
   templateUrl: './transcript-page.html',
 })
 
-export default class ComponentThree {
+export default class TranscriptPage {
 
   constructor(private route: ActivatedRoute) {}
 

@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'component-two',
+  selector: 'portf-page',
   templateUrl: './portf-page.html',
 })
-export default class ComponentTwo {
+export default class PortfPage {
 
   constructor(private route: ActivatedRoute) {
     
