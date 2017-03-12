@@ -13,6 +13,7 @@ import { Router } from '@angular/router';
           <ul>
             <a [routerLink]="['./portf-page']"><li>Portfolio</li></a>
             <a [routerLink]="['./transcript-page']"><li>Transcript</li></a>
+            <a [routerLink]="['./resume-page']"><li>Curriculum Vitae</li></a>
           </ul>
         </div>
         <div id="botNav">

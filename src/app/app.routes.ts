@@ -4,6 +4,7 @@ import ComponentTwo from './portf-page';
 import ProjOne from './proj-one';
 import ProjTwo from './proj-two';
 import ComponentThree from './transcript-page';
+import ResumePage from './resume-page';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home-page', pathMatch: 'full' },
@@ -15,7 +16,8 @@ export const routes: Routes = [
       { path: 'proj-two', component: ProjTwo }
     ]
   },
-  { path: 'transcript-page', component: ComponentThree }
+  { path: 'transcript-page', component: ComponentThree },
+  { path: 'resume-page', component: ResumePage }
 ];
 
 export const appRoutingProviders: any[] = [

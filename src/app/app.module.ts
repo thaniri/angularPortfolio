@@ -8,6 +8,7 @@ import ComponentTwo from './portf-page';
 import ProjOne from './proj-one';
 import ProjTwo from './proj-two';
 import ComponentThree from './transcript-page';
+import ResumePage from './resume-page';
 
 @NgModule({
   imports: [
@@ -20,7 +21,8 @@ import ComponentThree from './transcript-page';
     ComponentTwo,
     ProjOne,
     ProjTwo,
-    ComponentThree
+    ComponentThree,
+    ResumePage
   ],
   providers: [
     appRoutingProviders
