@@ -11,8 +11,8 @@ import { Router } from '@angular/router';
         </div>
         <div id="centerNav">
           <ul>
-            <li><a [routerLink]="['./portf-page']">Portfolio</a></li>
-            <li><a [routerLink]="['./transcript-page']">Transcript</a></li>
+            <a [routerLink]="['./portf-page']"><li>Portfolio</li></a>
+            <a [routerLink]="['./transcript-page']"><li>Transcript</li></a>
           </ul>
         </div>
         <div id="botNav">
@@ -22,7 +22,7 @@ import { Router } from '@angular/router';
     </div>
     <div id="rightCol">
       <header>
-          <p>header</p>
+          <h1>{{title}}</h1>
       </header>
       <main>
         <div>

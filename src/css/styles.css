@@ -56,14 +56,6 @@ h1, h2, h3, h4, h5, h6, p, span, div{
 
 /*CLASSES START HERE*/
 
-.colourDemo{
-    width:200px;
-}
-
-.colourSwatch{
-    margin:10px;
-}
-
 .largeContent{
 	position:relative;
 	min-height:50vh;
@@ -88,21 +80,6 @@ h1, h2, h3, h4, h5, h6, p, span, div{
 	background-color:#fff;
 	box-shadow: 0 2px 5px rgba(0,0,0,.26);
 	width:256px;
-}
-
-.username{
-	position:absolute;
-	right:20px;
-	color:#fff;
-	font-size:110%;
-}
-
-.username a{
-	color:#fff;
-}
-
-.username a:hover{
-	color:#eee;
 }
 
 /*COLOURS START HERE*/
@@ -148,12 +125,6 @@ h1, h2, h3, h4, h5, h6, p, span, div{
 	border-bottom: 1px solid #e0e0e0;
 	text-align:center;
 	width:256px;
-}
-
-#topNav img{
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
 }
 
 #topNav, header{
