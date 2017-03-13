@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
     <div id="leftCol">
       <nav>
         <div id="topNav">
-          <a [routerLink]="['./home-page']">Marek Slabicki</a>
+          <img id="headerimg" src="../icons/headerimg.svg" /><a [routerLink]="['./home-page']">Marek Slabicki</a>
         </div>
         <div id="centerNav">
           <ul>
@@ -17,7 +17,7 @@ import { Router } from '@angular/router';
           </ul>
         </div>
         <div id="botNav">
-          <span>Marek Slabicki</span>
+          <div>Marek Slabicki</div>
         </div>
       </nav>
     </div>
