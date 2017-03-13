@@ -82,6 +82,17 @@ h1, h2, h3, h4, h5, h6, p, span, div{
 	width:256px;
 }
 
+.skills{
+	width:64px;
+	text-align:center;
+	display:inline-block;
+	padding:5px;
+}
+
+.skills img{
+	width:64px;
+}
+
 .centeredContent{
 	
 }
