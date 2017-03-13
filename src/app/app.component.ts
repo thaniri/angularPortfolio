@@ -23,7 +23,7 @@ import { Router } from '@angular/router';
     </div>
     <div id="rightCol">
       <header>
-          <h1>{{title}}</h1>
+          header
       </header>
       <main>
         <div>
