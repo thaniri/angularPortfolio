@@ -60,11 +60,15 @@ h1, h2, h3, h4, h5, h6, p, span, div{
 	position:relative;
 	min-height:50vh;
 	width:66%;
-	margin-left:auto;
-	margin-right:auto;
+	margin: 40px auto 40px auto;
 	background-color:#fff;
 	box-shadow: 0 2px 5px rgba(0,0,0,.26);
 	padding:10px;
+	overflow:auto;
+}
+
+.largeContent:first-of-type{
+	margin-top:80px;
 }
 
 .smallContentRow{
@@ -80,6 +84,11 @@ h1, h2, h3, h4, h5, h6, p, span, div{
 	background-color:#fff;
 	box-shadow: 0 2px 5px rgba(0,0,0,.26);
 	width:256px;
+}
+
+.centerAlign{
+	margin-left:auto;
+	margin-right:auto;
 }
 
 .skills{
@@ -123,6 +132,10 @@ h1, h2, h3, h4, h5, h6, p, span, div{
 	color:#212121;
 }
 
+.hoverColour{
+	color:#eee;
+}
+
 /*IDS START HERE*/
 
 @keyframes spin {
@@ -164,8 +177,6 @@ h1, h2, h3, h4, h5, h6, p, span, div{
 #centerNav li{
 	padding:20px;
 }
-
-
 
 #centerNav a{
 	text-decoration: none;
@@ -229,8 +240,10 @@ nav{
 header{
 	background-color:#4CAF50;
 	box-shadow: 0 2px 5px rgba(0,0,0,.26);
-	border-left: 1px solid #e0e0e0;
-	border-bottom: 1px solid #e0e0e0;
+	padding-bottom:1px;
+	position:fixed;
+	width:100%;
+	z-index:1;
 }
 
 header h1{
@@ -249,28 +262,44 @@ footer{
 }
 
 h1 {
-	font-size:56px;
+	font-size:34px;
 	font-weight:400;
-	line-height:64px;
+	line-height:40px;
 }
 
 h2 {
-	font-size:45px;
+	font-size:24px;
 	font-weight:400;
-	line-height:64px;
+	line-height:32px;
 }
 
-h3 {
-	font-size:34px;
-	font-weight:400;
-	line-height:52px;
-}
-
-P{
-	font-size:16px;
+p{
+	font-size:13px;
 	font-weight:500;
 	line-height:16px;
 	margin-bottom:8px;
+	opacity:0.87;
+}
+
+thead{
+	opacity:0.5;
+}
+
+th{
+	padding:1.3rem;
+}
+
+td{
+	opacity:0.87;
+	padding:1.3rem;
+}
+
+tr{
+	border-bottom:solid 1px #eee;
+}
+
+tr:hover{
+	background-color:#eee;
 }
 
 /* BREAKPOINTS START HERE */
