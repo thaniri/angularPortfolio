@@ -136,13 +136,6 @@ h1, h2, h3, h4, h5, h6, p, span, div{
 	transform: translateY(-50%);
 }
 
-#headerimg:hover{
-	animation-name: spin; 
-	animation-duration: 25s;
-	animation-iteration-count: infinite; 
-	animation-timing-function: ease;
-}
-
 #headerimg{
 	width:40px;
 }
@@ -171,6 +164,8 @@ h1, h2, h3, h4, h5, h6, p, span, div{
 #centerNav li{
 	padding:20px;
 }
+
+
 
 #centerNav a{
 	text-decoration: none;
