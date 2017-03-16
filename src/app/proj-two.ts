@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'child-two',
-  template: 'Some info about Project 2'
+ templateUrl: './proj-two.html'
 })
 export default class ChildTwo { 
 }

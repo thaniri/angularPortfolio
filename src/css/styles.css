@@ -72,13 +72,20 @@ h1, h2, h3, h4, h5, h6, p, span, div{
 }
 
 .smallContentRow{
+	position:relative;
 	display:flex;
-	margin-left:auto;
-	margin-right:auto;
+	justify-content:space-around;
+	width:66%;
+	margin: 40px auto 40px auto;
+}
+
+.smallContentRow:first-of-type{
+	margin-top:80px;
 }
 
 .smallContent{
 	min-height:10vh;
+	display:inline-block;
 	margin:10px;
 	padding:10px;
 	background-color:#fff;
@@ -89,6 +96,12 @@ h1, h2, h3, h4, h5, h6, p, span, div{
 .centerAlign{
 	margin-left:auto;
 	margin-right:auto;
+}
+
+.verticalAlign a{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .skills{
@@ -102,30 +115,28 @@ h1, h2, h3, h4, h5, h6, p, span, div{
 	width:64px;
 }
 
+.projectPic{
+	max-width:75%;
+	box-shadow: 0 2px 5px rgba(0,0,0,.26);
+	margin:30px 0px 30px 0px;
+}
+
+ul.circleList{
+	list-style-type:circle;
+}
+
 /*COLOURS START HERE*/
 
 .primaryColour{
-    background-color:#4CAF50;
+    background-color:#9E9E9E;
 }
 
 .secondaryColour{
-    background-color:#388E3C;
+    background-color:#616161;
 }
 
 .tertiaryColour{
-    background-color:#C8E6C9;
-}
-
-.primaryColourAccent{
-    background-color:#2196F3;
-}
-
-.secondaryColourAccent{
-    background-color:#1976D2;
-}
-
-.tertiaryColourAccent{
-    background-color:#BBDEFB;
+    background-color:#F5F5F5;
 }
 
 .textColourPrimary{
@@ -238,7 +249,7 @@ nav{
 }
 
 header{
-	background-color:#4CAF50;
+	background-color:#9E9E9E;
 	box-shadow: 0 2px 5px rgba(0,0,0,.26);
 	padding-bottom:1px;
 	position:fixed;
@@ -256,7 +267,7 @@ header h1{
 }
 
 footer{
-	background-color:#4CAF50;
+	background-color:#9E9E9E;
 	border-left: 1px solid #e0e0e0;
 	border-top: 1px solid #e0e0e0;
 }
@@ -273,11 +284,23 @@ h2 {
 	line-height:32px;
 }
 
+h1, h2{
+	margin-bottom:30px;
+	margin-top:30px;
+}
+
 p{
-	font-size:13px;
+	font-size:14px;
 	font-weight:500;
 	line-height:16px;
 	margin-bottom:8px;
+	opacity:0.87;
+}
+
+li{
+	font-size:14px;
+	font-weight:500;
+	line-height:16px;
 	opacity:0.87;
 }
 
