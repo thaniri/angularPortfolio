@@ -17,11 +17,9 @@ export const routes: Routes = [
     ]
   },
   { path: 'transcript-page', component: TranscriptPage },
-  { path: 'resume-page', component: ResumePage }
+  { path: 'resume-page', component: ResumePage },
 ];
 
-export const appRoutingProviders: any[] = [
+export const appRoutingProviders: any[] = [];
 
-];
-
-export const routing = RouterModule.forRoot(routes);
+export const routing = RouterModule.forRoot(routes, { useHash: true });
