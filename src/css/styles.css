@@ -318,15 +318,15 @@ p{
 }
 
 a{
-	color:#1B5E20;
+	color:#4CAF50;
 }
 
 a:hover{
-	color:#4CAF50;
+	color:#1B5E20;
 }
 
 a:active{
-	color:#4CAF50;
+	color:#1B5E20;
 }
 
 li{
