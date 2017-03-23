@@ -8,13 +8,13 @@ import { Title } from '@angular/platform-browser';
     <div id="leftCol">
       <nav>
         <div id="topNav">
-         <a [routerLink]="['./home-page']"><img id="headerimg" src="../icons/headerimg.svg" /> Marek Slabicki</a>
+         <a (click)="setTitle( 'Marek\\'s Homepage' )" [routerLink]="['./home-page']"><img id="headerimg" src="../icons/headerimg.svg" /> Marek Slabicki</a>
         </div>
         <div id="centerNav">
           <ul>
             <a (click)="setTitle( 'Marek\\'s Portfolio' )" [routerLink]="['./portf-page']" ><li>Portfolio</li></a>
-            <a (click)="setTitle( 'Marek\\s Transcipt' )" [routerLink]="['./transcript-page']"><li>Transcript</li></a>
-            <a (click)="setTitle( 'Marek\\s Resume' )" [routerLink]="['./resume-page']"><li>Curriculum Vitae</li></a>
+            <a (click)="setTitle( 'Marek\\'s Transcipt' )" [routerLink]="['./transcript-page']"><li>Transcript</li></a>
+            <a (click)="setTitle( 'Marek\\'s Resume' )" [routerLink]="['./resume-page']"><li>Curriculum Vitae</li></a>
           </ul>
         </div>
         <div id="botNav">
