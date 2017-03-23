@@ -140,19 +140,27 @@ ul.circleList{
 /*COLOURS START HERE*/
 
 .primaryColour{
-    background-color:#9E9E9E;
+    color:#9E9E9E;
 }
 
 .secondaryColour{
-    background-color:#616161;
+    color:#616161;
 }
 
 .tertiaryColour{
-    background-color:#F5F5F5;
+    color:#F5F5F5;
 }
 
 .textColourPrimary{
 	color:#212121;
+}
+
+.highlightPrimaryColour{
+	color:#4CAF50;
+}
+
+.highlightSecondaryColour{
+	color:#1B5E20;
 }
 
 .hoverColour{
@@ -307,6 +315,18 @@ p{
 	line-height:16px;
 	margin-bottom:8px;
 	opacity:0.87;
+}
+
+a{
+	color:#1B5E20;
+}
+
+a:hover{
+	color:#4CAF50;
+}
+
+a:active{
+	color:#4CAF50;
 }
 
 li{
