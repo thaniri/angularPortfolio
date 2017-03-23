@@ -18,7 +18,11 @@ import { Title } from '@angular/platform-browser';
           </ul>
         </div>
         <div id="botNav">
-          <div>Marek Slabicki</div>
+          <div>
+            <span>Marek Slabicki</span>
+            <span><a href="https://github.com/thaniri"><img src="../icons/github/github-original.svg"/> Github</a></span>
+            <span><a href="https://www.linkedin.com/in/marek-slabicki-1954a9135/"><img src="../icons/linkedin/linkedin.png"/> LinkedIn</a></span>
+          </div>
         </div>
       </nav>
     </div>
@@ -32,7 +36,6 @@ import { Title } from '@angular/platform-browser';
         </div>
       </main>
       <footer>
-        <p>footer</p>
       </footer>
     </div>
   `

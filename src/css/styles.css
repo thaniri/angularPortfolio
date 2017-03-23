@@ -233,6 +233,14 @@ ul.circleList{
 	transform: translateY(-50%);
 }
 
+#botNav span{
+	display:block;
+}
+
+#botNav img{
+	width:16px;
+}
+
 #botNav, footer{
 	height:96px;
 }
