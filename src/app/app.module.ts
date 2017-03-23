@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { routing, appRoutingProviders } from './app.routes';
+import { BrowserModule, Title } from '@angular/platform-browser';
 
+import { routing, appRoutingProviders } from './app.routes';
 import { AppComponent } from './app.component';
+
 import HomePage from './home-page';
 import PortfPage from './portf-page';
 import ProjOne from './proj-one';
@@ -25,9 +26,10 @@ import ResumePage from './resume-page';
     ResumePage
   ],
   providers: [
-    appRoutingProviders
+    appRoutingProviders,
+    Title
   ],
   bootstrap: [ AppComponent ]
 })
-export class AppModule {
-}
+
+export class AppModule { }

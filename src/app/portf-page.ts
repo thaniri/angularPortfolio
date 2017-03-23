@@ -5,11 +5,7 @@ import { ActivatedRoute } from '@angular/router';
   selector: 'portf-page',
   templateUrl: './portf-page.html',
 })
+
 export default class PortfPage {
-
-  constructor(private route: ActivatedRoute) {
-    
-  }
-
-  
+  constructor(private route: ActivatedRoute) { }
 }

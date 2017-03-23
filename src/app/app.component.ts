@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import { Router } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app',
@@ -11,9 +12,9 @@ import { Router } from '@angular/router';
         </div>
         <div id="centerNav">
           <ul>
-            <a [routerLink]="['./portf-page']"><li>Portfolio</li></a>
-            <a [routerLink]="['./transcript-page']"><li>Transcript</li></a>
-            <a [routerLink]="['./resume-page']"><li>Curriculum Vitae</li></a>
+            <a (click)="setTitle( 'Marek\\'s Portfolio' )" [routerLink]="['./portf-page']" ><li>Portfolio</li></a>
+            <a (click)="setTitle( 'Marek\\s Transcipt' )" [routerLink]="['./transcript-page']"><li>Transcript</li></a>
+            <a (click)="setTitle( 'Marek\\s Resume' )" [routerLink]="['./resume-page']"><li>Curriculum Vitae</li></a>
           </ul>
         </div>
         <div id="botNav">
@@ -23,7 +24,7 @@ import { Router } from '@angular/router';
     </div>
     <div id="rightCol">
       <header>
-          header
+          <div class="headerTitle"><span class="pageTitle">HIHIHI{{title}}</span></div>
       </header>
       <main>
         <div>
@@ -38,6 +39,10 @@ import { Router } from '@angular/router';
 })
 
 export class AppComponent {
-  constructor (private router: Router) {}
+  constructor (private router: Router,
+  private titleService: Title) {}
 
+  public setTitle( newTitle: string) {
+    this.titleService.setTitle( newTitle );
+  }
 }
