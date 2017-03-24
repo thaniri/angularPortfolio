@@ -1,11 +1,13 @@
 <div class="largeContent">
-    <p>Download my <a href="misc/combinedtranscript.pdf">transcript</a></p>
-    <table class="centerAlign">
-        <thead>
-            <tr><th>Course</th><th>Title</th><th>Grade</th><th>School</th><th>Semester</th><th>Year</th></tr>
-        </thead>
-        <tr *ngFor="let grade of grades">
-            <td>{{grade.id}}</td><td>{{grade.title}}</td><td>{{grade.grade}}</td><td>{{grade.school}}</td><td>{{grade.semester }}</td><td>{{grade.year}}</td>
-        </tr>
-    </table>
+    <div class="insideLargeContent">
+        <p>Download my <a href="misc/combinedtranscript.pdf">transcript</a></p>
+        <table class="centerAlign">
+            <thead>
+                <tr><th>Course</th><th>Title</th><th>Grade</th><th>School</th><th>Semester</th><th>Year</th></tr>
+            </thead>
+            <tr *ngFor="let grade of grades">
+                <td>{{grade.id}}</td><td>{{grade.title}}</td><td>{{grade.grade}}</td><td>{{grade.school}}</td><td>{{grade.semester }}</td><td>{{grade.year}}</td>
+            </tr>
+        </table>
+    </div>
 </div>

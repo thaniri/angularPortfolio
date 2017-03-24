@@ -79,6 +79,10 @@ h1, h2, h3, h4, h5, h6, p, span, div{
 	overflow:auto;
 }
 
+.insideLargeContent{
+	padding:0px 80px 0px 80px;
+}
+
 .largeContent:first-of-type{
 	margin-top:80px;
 }
@@ -127,6 +131,10 @@ h1, h2, h3, h4, h5, h6, p, span, div{
 	width:64px;
 }
 
+.project:hover{
+	background-color:#eee;
+}
+
 .projectPic{
 	max-width:75%;
 	box-shadow: 0 2px 5px rgba(0,0,0,.26);
@@ -135,6 +143,7 @@ h1, h2, h3, h4, h5, h6, p, span, div{
 
 ul.circleList{
 	list-style-type:circle;
+	padding-left:20px;
 }
 
 /*COLOURS START HERE*/
@@ -300,16 +309,22 @@ footer{
 	border-top: 1px solid #e0e0e0;
 }
 
-h1 {
+h1{
 	font-size:34px;
 	font-weight:400;
-	line-height:40px;
+	line-height:20px;
 }
 
-h2 {
+h2{
 	font-size:24px;
 	font-weight:400;
-	line-height:32px;
+	line-height:16px;
+}
+
+h3{
+	font-size:20px;
+	font-weight:500;
+	line-height:1;
 }
 
 h1, h2{
@@ -372,12 +387,20 @@ tr:hover{
 	#leftCol, nav{
 		display:none;
 	}
+
+	.insideLargeContent{
+		padding:0px;
+	}
 }
 
 /* mobile-large */
 @media all and (min-width: 361px) and (orientation: portrait){
 	#leftCol, nav{
 		display:none;
+	}
+
+	.insideLargeContent{
+		padding:0px;
 	}
 }
 
@@ -386,12 +409,20 @@ tr:hover{
 	#leftCol, nav{
 		display:none;
 	}
+
+	.insideLargeContent{
+		padding:0px;
+	}
 }
 
 /* desktop-small */
 @media all and (min-width: 481px) and (max-width: 840px){
 	#leftCol, nav{
 		display:none;
+	}
+
+	.insideLargeContent{
+		padding:0px;
 	}
 }
 
@@ -401,6 +432,10 @@ tr:hover{
 	#leftCol, nav{
 		display:none;
 	}
+
+	.insideLargeContent{
+		padding:0px;
+	}
 }
 	
 /* desktop-medium */
@@ -408,6 +443,10 @@ tr:hover{
 @media all and (min-width: 841px) and (max-width: 1280px) and (max-aspect-ratio: 4/3){
 	#leftCol, nav{
 		display:none;
+	}
+
+	.insideLargeContent{
+		padding:0px;
 	}
 }
 
