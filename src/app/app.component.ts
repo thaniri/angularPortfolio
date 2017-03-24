@@ -36,6 +36,7 @@ import { Title } from '@angular/platform-browser';
         </div>
       </main>
       <footer>
+        <button id="scrollUp"><img (click)="scrollUp()" src="./icons/buttons/upArrow.png"/></button>
       </footer>
     </div>
   `
@@ -53,6 +54,10 @@ export class AppComponent {
 
   public setPageTitle() {
     this.title = this.titleService.getTitle();
+  }
+
+  public scrollUp(){
+    window.scrollTo(0,0);
   }
 
 }

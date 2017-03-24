@@ -49,9 +49,14 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
 h1, h2, h3, h4, h5, h6, p, span, div{
 	color:#212121;
+}
+button {
+	border:none;
+	box-sizing:none;
+	background:none;
+	cursor:pointer;
 }
 
 /*CLASSES START HERE*/
@@ -269,6 +274,13 @@ ul.circleList{
 		background:none;
 		border:none;
 		fill:#fff;
+}
+
+#scrollUp{
+	position: relative;
+	margin-left:20px;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 /*DEFAULT TAG NAMES START HERE*/
