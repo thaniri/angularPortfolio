@@ -283,6 +283,14 @@ ul.circleList{
 	transform: translateY(-50%);
 }
 
+#menuButton{
+	position: relative;
+	float:left;
+	margin-left:20px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
 /*DEFAULT TAG NAMES START HERE*/
 
 main{
@@ -464,14 +472,14 @@ tr:hover{
 
 /* desktop-large */
 @media all and (min-width: 1281px) and (max-width: 1600px){
-	#menuIcon{
+	#menuButton{
 		display:none;
 	}
 }
 
 /* desktop-xlarge */
 @media all and (min-width: 1601px) and (max-width: 1920px){
-	#menuIcon{
+	#menuButton{
 		display:none;
 	}
 }

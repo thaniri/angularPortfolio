@@ -28,6 +28,7 @@ import { Title } from '@angular/platform-browser';
     </div>
     <div id="rightCol">
       <header>
+      <button id="menuButton"><img (click)="toggleNavVisbility()" src="./icons/buttons/hamburger.png"/></button>
           <div class="headerTitle"><span class="pageTitle">{{title}}</span></div>
       </header>
       <main>
@@ -59,5 +60,16 @@ export class AppComponent {
   public scrollUp(){
     window.scrollTo(0,0);
   }
+
+  public toggleNavVisbility(){
+      if(document.getElementById("leftCol").style.display == "none" && document.getElementsByTagName("nav")[0].style.display == "none"){
+        document.getElementById("leftCol").style.display = "initial";
+        document.getElementsByTagName("nav")[0].style.display = "initial";
+      }
+      else if(document.getElementById("leftCol").style.display != "none" && document.getElementsByTagName("nav")[0].style.display != "none"){
+        document.getElementById("leftCol").style.display = "none";
+        document.getElementsByTagName("nav")[0].style.display = "none";
+      }
+    }
 
 }
