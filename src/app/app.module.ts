@@ -8,6 +8,7 @@ import HomePage from './home-page';
 import PortfPage from './portf-page';
 import ProjOne from './proj-one';
 import ProjTwo from './proj-two';
+import ProjThree from './proj-three';
 import TranscriptPage from './transcript-page';
 import ResumePage from './resume-page';
 
@@ -22,6 +23,7 @@ import ResumePage from './resume-page';
     PortfPage,
     ProjOne,
     ProjTwo,
+    ProjThree,
     TranscriptPage,
     ResumePage
   ],
