@@ -11,6 +11,7 @@ import ProjTwo from './proj-two';
 import ProjThree from './proj-three';
 import TranscriptPage from './transcript-page';
 import ResumePage from './resume-page';
+import ContactPage from './contact-page';
 
 @NgModule({
   imports: [
@@ -25,7 +26,8 @@ import ResumePage from './resume-page';
     ProjTwo,
     ProjThree,
     TranscriptPage,
-    ResumePage
+    ResumePage,
+    ContactPage
   ],
   providers: [
     appRoutingProviders,

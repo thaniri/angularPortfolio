@@ -6,6 +6,7 @@ import ProjTwo from './proj-two';
 import ProjThree from './proj-three';
 import TranscriptPage from './transcript-page';
 import ResumePage from './resume-page';
+import ContactPage from './contact-page';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home-page', pathMatch: 'full' },
@@ -20,6 +21,7 @@ export const routes: Routes = [
   },
   { path: 'transcript-page', component: TranscriptPage },
   { path: 'resume-page', component: ResumePage },
+  { path: 'contact-page', component: ContactPage },
 ];
 
 export const appRoutingProviders: any[] = [];

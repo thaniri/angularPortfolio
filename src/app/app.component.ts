@@ -15,6 +15,7 @@ import { Title } from '@angular/platform-browser';
             <a (click)="setTitle( 'Portfolio' )" (click)="setPageTitle()" [routerLink]="['./portf-page']" ><li>Portfolio</li></a>
             <a (click)="setTitle( 'Transcipt' )" (click)="setPageTitle()" [routerLink]="['./transcript-page']"><li>Transcript</li></a>
             <a (click)="setTitle( 'Resume' )" (click)="setPageTitle()" [routerLink]="['./resume-page']"><li>Curriculum Vitae</li></a>
+            <a (click)="setTitle( 'Contact' )" (click)="setPageTitle()" [routerLink]="['./contact-page']"><li>Contact Me</li></a>
           </ul>
         </div>
         <div id="botNav">
