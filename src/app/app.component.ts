@@ -8,14 +8,14 @@ import { Title } from '@angular/platform-browser';
     <div id="leftCol">
       <nav>
         <div id="topNav">
-         <a (click)="setTitle( 'Homepage' )" (click)="setPageTitle()" [routerLink]="['./home-page']"><img id="headerimg" src="../icons/headerimg.svg" /> Marek Slabicki</a>
+         <a (click)="setTitle( 'Homepage' )" (click)="setPageTitle()" [routerLink]="['./home-page']"><img id="headerimg" src="../icons/headerimg.svg" alt="homepage button"/> Marek Slabicki</a>
         </div>
         <div id="centerNav">
           <ul>
             <a (click)="setTitle( 'Portfolio' )" (click)="setPageTitle()" [routerLink]="['./portf-page']" ><li>Portfolio</li></a>
             <a (click)="setTitle( 'Transcipt' )" (click)="setPageTitle()" [routerLink]="['./transcript-page']"><li>Transcript</li></a>
             <a (click)="setTitle( 'Resume' )" (click)="setPageTitle()" [routerLink]="['./resume-page']"><li>Curriculum Vitae</li></a>
-            <a (click)="setTitle( 'Contact' )" (click)="setPageTitle()" [routerLink]="['./contact-page']"><li>Contact Me</li></a>
+            <a (click)="setTitle( 'Contact' )" (click)="setPageTitle()" [routerLink]="['./contact-page']"><li>Contact</li></a>
           </ul>
         </div>
         <div id="botNav">
@@ -29,7 +29,7 @@ import { Title } from '@angular/platform-browser';
     </div>
     <div id="rightCol">
       <header>
-      <button id="menuButton"><img (click)="toggleNavVisbility()" src="./icons/buttons/hamburger.png"/></button>
+      <button id="menuButton"><img (click)="toggleNavVisbility()" src="./icons/buttons/hamburger.png" alt="toggle navigation button"/></button>
           <div class="headerTitle"><span class="pageTitle">{{title}}</span></div>
       </header>
       <main>
@@ -38,7 +38,7 @@ import { Title } from '@angular/platform-browser';
         </div>
       </main>
       <footer>
-        <button id="scrollUp"><img (click)="scrollUp()" src="./icons/buttons/upArrow.png"/></button>
+        <button id="scrollUp"><img (click)="scrollUp()" src="./icons/buttons/upArrow.png" alt="scroll up button"/></button>
       </footer>
     </div>
   `
