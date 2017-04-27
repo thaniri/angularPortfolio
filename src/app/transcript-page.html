@@ -3,10 +3,10 @@
         <p>Download my <a href="misc/combinedtranscript.pdf">transcript</a></p>
         <table class="centerAlign">
             <thead>
-                <tr><th>Course</th><th>Title</th><th>Grade</th><th>School</th><th>Semester</th><th>Year</th></tr>
+                <tr><th align="left">Course</th><th align="left">Title</th><th align="left">Grade</th><th align="left">School</th><th align="left">Semester</th><th align="right">Year</th></tr>
             </thead>
             <tr *ngFor="let grade of grades">
-                <td>{{grade.id}}</td><td>{{grade.title}}</td><td>{{grade.grade}}</td><td>{{grade.school}}</td><td>{{grade.semester }}</td><td>{{grade.year}}</td>
+                <td align="left">{{grade.id}}</td><td align="left">{{grade.title}}</td><td align="left">{{grade.grade}}</td><td align="left">{{grade.school}}</td><td align="left">{{grade.semester }}</td><td align="right">{{grade.year}}</td>
             </tr>
         </table>
     </div>
