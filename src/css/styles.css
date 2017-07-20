@@ -274,10 +274,6 @@ tr:hover{
 	width:64px;
 }
 
-.project:hover{
-	background-color:#eee;
-}
-
 .projectPic{
 	max-width:75%;
 	box-shadow: 0 2px 5px rgba(0,0,0,.26);
