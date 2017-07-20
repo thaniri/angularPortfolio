@@ -30,7 +30,7 @@ import { Title } from '@angular/platform-browser';
     <div id="rightCol">
       <header>
       <button id="menuButton"><img (click)="toggleNavVisbility()" src="./icons/buttons/hamburger.png" alt="toggle navigation button"/></button>
-          <div class="headerTitle"><span class="pageTitle">{{title}}</span></div>
+          <div class="headerTitle"><span class="pageTitle"><h1>{{title}}</h1></span></div>
       </header>
       <main>
         <div>
