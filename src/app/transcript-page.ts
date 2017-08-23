@@ -43,6 +43,7 @@ const SCHOOLS = [
     { id: 'COMP 1451', title: 'Intro to Software Development 2', grade: 'A-', school: SCHOOLS[0], semester: SEMESTERS[0], year: 2017 },
     { id: 'COMP 2614', title: '.NET Windows Application Development in C#', grade: 'B-', school: SCHOOLS[0], semester: SEMESTERS[0], year: 2017 },
     { id: 'COMP 4669', title: 'Advanced Web Applications with PHP', grade: 'A-', school: SCHOOLS[0], semester: SEMESTERS[0], year: 2017 },
+    { id: 'COMP 4704', title: 'Applied Network Security', grade: '', school: SCHOOLS[0], semester: SEMESTERS[1], year: 2017 },
     { id: 'INFO 1111', title: 'Intro to Comp Hardware & Software', grade: 'A', school: SCHOOLS[1], semester: SEMESTERS[1], year: 2015 },
     { id: 'INFO 1112', title: 'Program Sructure & Design', grade: 'A', school: SCHOOLS[1], semester: SEMESTERS[1], year: 2015 },
     { id: 'INFO 1113', title: 'Systems Analysis and Design', grade: 'B+', school: SCHOOLS[1], semester: SEMESTERS[1], year: 2015 },
@@ -65,7 +66,7 @@ const SCHOOLS = [
     { id: 'INFO 2413', title: 'System Development Project', grade: 'A-', school: SCHOOLS[1], semester: SEMESTERS[2], year: 2017 },
     { id: 'INFO 2416', title: 'Server Operating Systems', grade: 'B+', school: SCHOOLS[1], semester: SEMESTERS[2], year: 2017 },
     { id: 'MATH 1140', title: 'Calculus I (Business Applic.)', grade: 'W', school: SCHOOLS[1], semester: SEMESTERS[2], year: 2017 },
-    { id: 'BUQU 1130', title: 'Business Mathematics', grade: '', school: SCHOOLS[1], semester: SEMESTERS[0], year: 2017 },
-    { id: 'INFO 3150', title: 'Object-Oriented Software Engineering', grade: '', school: SCHOOLS[1], semester: SEMESTERS[0], year: 2017 },
-    { id: 'INFO 3235', title: 'Software Quality Assurance', grade: '', school: SCHOOLS[1], semester: SEMESTERS[0], year: 2017 },
+    { id: 'BUQU 1130', title: 'Business Mathematics', grade: 'A-', school: SCHOOLS[1], semester: SEMESTERS[0], year: 2017 },
+    { id: 'INFO 3150', title: 'Object-Oriented Software Engineering', grade: 'A', school: SCHOOLS[1], semester: SEMESTERS[0], year: 2017 },
+    { id: 'INFO 3235', title: 'Software Quality Assurance', grade: 'B', school: SCHOOLS[1], semester: SEMESTERS[0], year: 2017 },
 ];
